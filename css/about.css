@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap');
+
+body {
+    background-color: #562AA3;
+}
+
+header {
+    background-color:#14762D;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+}
+
+nav p{
+    color: #F59FB8;
+    text-decoration: none;
+    font-size:3rem;
+    /* position: fixed; */
+}
+
+h1, h2 {
+    font-size: 60px;
+    font-family: Khula, light, sans-serif;
+    color:#A7FAEC;
+    padding: 10%;
+    text-align: center;
+    /* position:relative;
+    left:500px; */
+}
+    
+main {
+    width: 90%;
+    margin: auto;
+}
+
+p {
+    font-size: 30px;
+    font-family: Khula, light, sans-serif;
+    color:#A7FAEC;
+}
+
+img {
+width: 100%;
+}
+
+footer {
+    background-color: #FFEEAF;
+    /* height:-1000px */
+    clear: left;
+}
+
+footer p{
+    color:#562AA3;
+    margin: center;
+}
+
+@media screen and (min-width: 1024px){
+    section {
+        flex-direction:column;
+    }
+
+    h2 {
+        font-size: 80px;
+        margin: center;
+    }
+    /* nav {
+        
+    } */
+}
