@@ -1,0 +1,406 @@
+/* Import Rules */
+
+/* -- Open Sans 300, 400,700 */
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap');
+
+
+/* Reset Styles */
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles */
+
+body {
+    font-family: Khula, light, sans-serif;
+    background-color: #562AA3;
+}
+/* Header Styles */
+
+header {
+    background-color:#14762D;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+}
+
+/* -- Nav Styles */
+
+nav {
+    background-color: #14762D;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#checkbox {
+    display: none;
+}
+
+#hamburger {
+    font-size: 3rem;
+    padding: 3%;
+    cursor: pointer;
+}
+
+nav ul {
+    position: relative;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    
+}
+
+nav ul li {
+    list-style-type: none;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #F59FB8;
+    /* add transition here */
+    
+
+}
+
+nav ul li a:hover {
+    color: white;
+    
+}
+
+nav label {color: #F59FB8;
+    text-decoration: none;
+    font-size:3rem;
+}
+
+#checkbox:checked~ul{
+    display: block;
+    
+}
+
+/* Main Styles */
+
+main {
+    width: 80%;
+    margin: auto;
+    
+}
+
+main img {
+    position: relative;
+    top:50px;
+    z-index:-999;
+}
+
+p {
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Page styles */
+
+h1, h2 {
+    font-size: 60px;
+    font-family: Khula, light, sans-serif;
+    color:#A7FAEC;
+    padding: 10%;
+    text-align: center;
+    position:relative;
+    z-index:-999;
+}
+
+.animation {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    z-index:-999;
+  }
+  
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:250px; top:0px;}
+    50%  {background-color:blue; left:500px; top:0px;}
+    75%  {background-color:green; left:750px; top:0px;}
+    100% {background-color:red; left:1000px; top:0px;}
+  }
+
+
+/* section {
+    font-size: 40px;
+    font-family: Khula, light, sans-serif;
+    color: #A7FAEC;
+}
+
+section div {
+    width: 100%;
+    margin: auto;
+    height: auto;
+}
+
+
+section div p {
+    width: 50%;
+    color:#A7FAEC;
+    clear: left;
+}
+
+section div {
+    clear: left;
+}
+
+div img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+} */
+
+p {
+    font-size: 30px;
+    font-family: Khula, light, sans-serif;
+    color:#A7FAEC;
+}
+
+/* code {
+    font-weight: bold;
+    font-size: 1.5em;
+    background-color: yellow;
+}
+
+.demo {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5%;
+}
+
+.demo div {
+    flex-basis: 50%;
+    min-height: 100px;
+}
+
+.demo div p {
+    color: #F2F2F2;
+    padding: 10%;
+}
+
+.rotate-before,
+.scale-before,
+.translate-before,
+.skew-before {
+    background-color: green;
+}
+
+/* 1. ADD A FEW TRANSFORM DECLARATIONS BELOW */
+
+/*.rotate-after {
+    background-color: purple;
+    /* rotate the div */
+/*}
+
+.scale-after {
+    background-color: purple;
+    /* scale the div */
+/*}
+
+.translate-after {
+    background-color: purple;
+    /* translate the div */
+/*}
+
+.skew-after {
+    background-color: purple;
+    /* skew the div */
+/*}
+
+/* 2. ADD A TRANSITION TO THE MENU  - line 67 */
+
+/* Note: The acronym PDTD can be used to memorize the order of the properties. 
+- property
+- duration
+- timing-function
+- delay */
+
+/*.transition-before {
+    background-color: green;
+}
+
+.transition-before:hover {
+    background-color: blue;
+}
+
+.transition-after {
+    background-color: purple;
+    /* Insert transition properties here */
+
+/*}
+
+.transition-after:hover {
+    background-color: blue;
+    border-radius: 50%;
+}
+
+.transition-d-before {
+    background-color: green;
+}
+
+.transition-d-before:hover {
+    background-color: blue;
+}
+
+.transition-d-after {
+    background-color: purple;
+    /* Insert transition properties here */
+
+/*}
+
+.transition-d-after:hover {
+    background-color: blue;
+    border: 2px solid white;
+    
+}
+
+.transition-t-before {
+    background-color: green;
+}
+
+.transition-t-before:hover {
+    background-color: blue;
+}
+
+.transition-t-after {
+    background-color: purple;
+    /* Insert transition properties here */
+
+/*}
+
+.transition-t-after:hover {
+    background-color: blue;
+    border: 2px solid white;
+    
+}
+
+.transition-d2-before {
+    background-color: green;
+}
+
+.transition-d2-before:hover {
+    background-color: blue;
+}
+
+.transition-d2-after {
+    background-color: purple;
+    /* Insert transition properties here */
+
+/*}
+
+.transition-d2-after:hover {
+    background-color: blue;
+    transform: rotate(45deg);
+    
+}
+
+/* Animations */
+
+/*button {
+    background-color: black;
+    color:#29d7dd;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid #29d7dd;
+    font-size: 1.25rem;
+}
+
+.animate-my-color:hover {
+    animation-name: color-me;
+    animation-duration: 5s;
+}
+
+.animate-rock-me {
+    animation-name: rock-me;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count:infinite;
+} */
+
+footer {
+    background-color: #FFEEAF;
+     height:-1000px;
+     padding: 2%;
+    clear: left;
+}
+
+footer p{
+    color:#562AA3;
+    clear: left;
+}
+
+
+/*@keyframes color-me {
+    from {
+        background-color: black;
+        color: #29d7dd
+    }
+    to {
+        background-color: #29d7dd;
+        color: black;
+        border: 1px solid black;
+    }
+}
+
+@keyframes rock-me {
+    from {
+        transform: rotate(-10deg);
+    }
+    to {
+        transform: rotate(10deg);
+    }
+}
+
+
+
+
+
+
+/* Media Queries */
+
+@media screen and (min-width: 768px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    nav ul {
+        position: relative;
+        z-index: 999;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    nav ul li {
+        padding-bottom: 0;
+        padding-right: 2%;
+    }
+     
+    #checkbox:checked~ul{
+        display: block;
+        
+    }
+}
